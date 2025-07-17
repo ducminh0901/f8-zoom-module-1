@@ -1,0 +1,359 @@
+@use "/scss/mixins";
+@use "../variables" as *;
+
+.wrapper {
+    margin-left: auto;
+    margin-right: auto;
+}
+.header__home {
+    background-color: $yellow-light-color;
+}
+
+.header__content {
+    margin-top: $section-gap;
+    padding-bottom: $section-gap;
+    display: grid;
+    place-items: center;
+    .header__intro {
+        .header__sub-heading {
+            margin-bottom: $text-gap;
+            color: $primary-color;
+        }
+        .header__p-1 {
+            margin-top: $text-gap;
+        }
+    }
+    .header__image {
+        display: grid;
+        place-items: center;
+        .header__image--cover {
+            @include mixins.screen(md) {
+                display: none;
+            }
+        }
+        .header__image--md {
+            display: none;
+            @include mixins.screen(md) {
+                display: inline-block;
+            }
+            @include mixins.screen(sm) {
+                display: none;
+            }
+        }
+        .header__image--sm {
+            display: none;
+            @include mixins.screen(sm) {
+                display: inline-block;
+            }
+        }
+    }
+}
+.about {
+    background-color: $primary-color;
+    color: $secondary-color;
+}
+.about__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 0;
+    @include mixins.screen(md) {
+        .about__image {
+            display: none;
+        }
+    }
+    .about__content {
+        padding: 50px 0;
+        .about__sub-heading {
+            color: $color-button;
+        }
+
+        .about__paragraph {
+            margin: $text-gap 0;
+        }
+    }
+}
+.practice-area {
+    color: $primary-color;
+}
+.practice-area__paragraph {
+    margin-top: $text-gap;
+}
+.practice-area__list {
+    list-style: disc;
+    padding: 25px;
+}
+.feature-1__img {
+    display: grid;
+    place-items: center;
+    .feature-1__img-wrapper {
+        position: relative;
+        .feature-1__img--sm {
+            display: none;
+        }
+        @include mixins.screen(md) {
+            .feature-1__img--xxl {
+                display: none;
+            }
+            .feature-1__img--sm {
+                display: inline-block;
+            }
+        }
+        .feature-1__img--ab {
+            position: absolute;
+            top: 35%;
+            left: -9%;
+            @include mixins.screen(md) {
+                display: none;
+            }
+        }
+        .feature-1__img--ab-sm {
+            display: none;
+            @include mixins.screen(md) {
+                display: block;
+                position: absolute;
+                top: 32%;
+                left: -8%;
+            }
+        }
+        .feature-1__img--rectangle {
+            position: absolute;
+            top: 0;
+            right: 0;
+            @include mixins.screen(md) {
+                display: none;
+            }
+        }
+        .feature-1__img--rectangle-sm {
+            display: none;
+            @include mixins.screen(md) {
+                display: block;
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+        }
+    }
+}
+.feature-2__img {
+    display: grid;
+    place-items: center;
+    .feature-2__img-wrapper {
+        position: relative;
+        .feature-2__img--sm {
+            display: none;
+        }
+        @include mixins.screen(md) {
+            .feature-2__img--xxl {
+                display: none;
+            }
+            .feature-2__img--sm {
+                display: inline-block;
+            }
+        }
+        .feature-2__img--ab {
+            position: absolute;
+            top: 35%;
+            right: 90%;
+            @include mixins.screen(lg) {
+                right: 87%;
+            }
+            @include mixins.screen(md) {
+                display: none;
+            }
+        }
+        .feature-2__img--ab-sm {
+            display: none;
+            @include mixins.screen(md) {
+                display: block;
+                position: absolute;
+                top: 47%;
+                left: -12%;
+            }
+            @include mixins.screen(sm) {
+                left: -11%;
+            }
+        }
+        .feature-2__img--rectangle {
+            position: absolute;
+            bottom: 7.4px;
+            right: 0;
+
+            @include mixins.screen(md) {
+                display: none;
+            }
+        }
+        .feature-2__img--rectangle-sm {
+            display: none;
+            @include mixins.screen(md) {
+                display: block;
+                position: absolute;
+                bottom: 7.5px;
+                right: 0;
+            }
+            @include mixins.screen(sm) {
+                right: 0;
+            }
+        }
+    }
+}
+.practice-area__feature-1 {
+    margin-top: $section-gap;
+    .practice-area__content-2 {
+        padding: 50px 50px 50px 20px;
+    }
+    .practice-area__content-1 {
+        padding: 50px 50px;
+    }
+    @include mixins.screen(sm) {
+        &:last-of-type {
+            margin-top: 0;
+        }
+    }
+}
+.testimonial {
+    padding: 80px 0;
+    .testimonial__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    .testimonial__content {
+        margin-top: 80px;
+        .testimonial__item {
+            padding: 20px;
+            border: 1px solid #e6efec;
+        }
+        .testimonial__item--shadow {
+            box-shadow: 0px 20px 70px 0px rgba(14, 20, 18, 0.07);
+            padding: 20px;
+        }
+        .thick {
+            padding: 20px 0;
+        }
+    }
+    .testiminial__dot {
+        text-align: center;
+        margin-top: 38px;
+    }
+}
+.faq__inner {
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    @include mixins.screen(md) {
+        width: 100%;
+    }
+    .faq__heading--font {
+        @include mixins.screen(sm) {
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 30.561px;
+        }
+    }
+    .faq__list {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        .faq__btn:hover {
+            color: $color-button;
+            font-weight: 600;
+        }
+        .orange {
+            color: $color-button;
+            font-weight: 600;
+        }
+    }
+    .faq__question {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 30px 20px;
+
+        label {
+            max-width: 28px;
+            max-height: 28px;
+            padding: 10px;
+            font-size: 1.6rem;
+            color: #fff;
+            cursor: pointer;
+            background-color: #0e1412;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    #open-question-1:checked + .faq__item {
+        background: #fff;
+        box-shadow: 0 20px 70px #0e141212;
+        margin-bottom: 30px;
+    }
+    #open-question-1:checked ~ .faq__item .faq__content-1 {
+        display: block;
+        padding: 0 20px 20px 20px;
+    }
+    #open-question-2:checked + .faq__item {
+        background: #fff;
+        box-shadow: 0 20px 70px #0e141212;
+        margin-bottom: 30px;
+    }
+    #open-question-2:checked ~ .faq__item .faq__content-2 {
+        display: block;
+        padding: 0 20px 20px 20px;
+    }
+    #open-question-3:checked + .faq__item {
+        background: #fff;
+        box-shadow: 0 20px 70px #0e141212;
+        margin-bottom: 30px;
+    }
+    #open-question-3:checked ~ .faq__item .faq__content-3 {
+        display: block;
+        padding: 0 20px 20px 20px;
+    }
+    .border {
+        border-top: 1px solid #e6efec;
+        // border-bottom: 1px solid #e6efec;
+    }
+}
+.blog__inner {
+    padding: $section-gap 0;
+    .blog__header--flex {
+        display: flex;
+        justify-content: space-between;
+        .blog__btn {
+            margin-top: 0;
+            @include mixins.screen(md) {
+                display: none;
+            }
+        }
+    }
+    .blog__content {
+        margin-top: 70px;
+        & h4 {
+            margin: $text-gap 0;
+            @include mixins.screen(sm) {
+                width: 85%;
+            }
+        }
+        .orange {
+            color: $color-button;
+        }
+
+        .blog__item--sm {
+            display: none;
+        }
+        @include mixins.screen(sm) {
+            .blog__item--xxl {
+                display: none;
+            }
+            .blog__item--sm {
+                display: inline-block;
+            }
+        }
+        .blog__item--flex {
+            display: flex;
+            gap: 15px;
+        }
+    }
+}

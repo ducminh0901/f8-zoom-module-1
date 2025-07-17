@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Practice</title>
+        <%- include("./partials/head.ejs") %>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header class="practice__header">
+                <div class="container">
+                    <%- include("./partials/header") %>
+                    <div class="practice__content">
+                        <p class="sub-heading">#Practice Areas</p>
+                        <h1 class="heading--main">
+                            Our Practice Areas to <br />
+                            Serve You
+                        </h1>
+                        <p>
+                            Where every injury is personal. We are a different
+                            kind of law firm. Let our small, <br />
+                            passionate group of trial lawyers fight for your
+                            rights!
+                        </p>
+                    </div>
+                </div>
+            </header>
+            <main>
+                <section class="practice__service">
+                    <div class="container">
+                        <div class="practice__service--inner">
+                            <%- include("./partials/practice-area.ejs") %>
+                        </div>
+                    </div>
+                </section>
+                <%- include("./partials/cta.ejs") %>
+            </main>
+            <%- include("./partials/footer.ejs") %>
+        </div>
+        <script type="module" src="./main.js"></script>
+    </body>
+</html>

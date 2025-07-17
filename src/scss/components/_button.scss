@@ -1,0 +1,17 @@
+@use "../variables" as *;
+.btn {
+    color: $secondary-color;
+    padding: 15px 35px;
+    background-color: $color-button;
+    margin-top: $button-gap;
+    transition: all 0.3s ease;
+    background-size: 200% auto;
+    transform: scale(1);
+    &:hover {
+        background-color: #ffffff;
+        color: $color-button;
+    }
+}
+.outline-btn:hover {
+    outline: 1px solid $color-button;
+}

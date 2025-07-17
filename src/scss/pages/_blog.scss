@@ -1,0 +1,25 @@
+@use "/scss/mixins";
+@use "../variables" as *;
+.blog {
+    background-color: $yellow-light-color;
+    padding-bottom: $text-gap;
+}
+.blog__gray {
+    color: $gray-color;
+}
+.blog__content {
+    margin-top: $section-gap;
+    @include mixins.screen(xl) {
+        p {
+            width: 85%;
+        }
+    }
+    @include mixins.screen(md) {
+        p {
+            width: 60%;
+        }
+    }
+    .blog_item--gap {
+        margin: $text-gap 0;
+    }
+}

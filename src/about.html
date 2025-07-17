@@ -4,9 +4,227 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>About</title>
+        <%- include("./partials/head.ejs") %>
     </head>
     <body>
-        <%- include("./partials/header.ejs") %>
-        <h1>About</h1>
+        <div class="wrapper">
+            <header class="header__about">
+                <div class="container">
+                    <%- include("./partials/header.ejs") %>
+                    <div class="header__about-content">
+                        <p class="about__sub-heading sub-heading">
+                            #1 Law Firm in New York
+                        </p>
+                        <h2 class="heading--main">
+                            Where The Experience <br />
+                            To Guide You
+                        </h2>
+                        <p>
+                            A law firm with deep expertise in New Jersey
+                            residential & investment property <br />
+                            transactions and many other things.
+                        </p>
+                    </div>
+                </div>
+            </header>
+            <main>
+                <section class="about__feature-1">
+                    <div class="container">
+                        <div class="row row-cols-2 row-cols-xl-1">
+                            <div class="col">
+                                <div class="about__feature-1--left">
+                                    <p class="sub-heading">#Story</p>
+                                    <h2 class="heading">
+                                        Through And Complete Attention to Law
+                                    </h2>
+                                    <p class="feature-1__gap">
+                                        Your initial meeting with Parmele Law
+                                        Firm sets in motion the difficult – and
+                                        tedious – process of getting your
+                                        benefits for you.
+                                    </p>
+                                    <p class="feature-1__gap">
+                                        While Mr. Parmele, his paralegals, and
+                                        clerks are busy assisting you with your
+                                        forms, helping you assemble your
+                                        documentation, and keeping you updated
+                                        regularly, Mr. Parmele is busy behind
+                                        the scenes, focusing on winning your
+                                        case.
+                                    </p>
+                                    <p>
+                                        How your case ends up may well be up to
+                                        you.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col center">
+                                <div class="about__feature-1--right">
+                                    <img
+                                        class="about__img"
+                                        src="./assets/images/about-page-img.png"
+                                        alt=""
+                                    />
+                                    <img
+                                        class="about__img--sm"
+                                        src="./assets/images/about-page-img-sm.png"
+                                        alt=""
+                                    />
+                                    <img
+                                        class="about__feature-1--abstract"
+                                        src="./assets/images/about-abstract.svg"
+                                        alt=""
+                                    />
+                                    <img
+                                        class="about__feature-1--abstract-sm"
+                                        src="./assets/images/about-abstract-sm.svg"
+                                        alt=""
+                                    />
+                                    <img
+                                        class="about__feature-1--rectangle"
+                                        src="./assets/images/about-rectangle.svg"
+                                        alt=""
+                                    />
+                                    <img
+                                        class="about__feature-1--rectangle-sm"
+                                        src="./assets/images/about-rectangle-sm.svg"
+                                        alt=""
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="about__feature-2">
+                    <div class="container">
+                        <div class="about__feature-2--top">
+                            <p class="sub-heading center">#Gallery</p>
+                            <h2
+                                class="about__feature-2--heading heading center"
+                            >
+                                Justice Law Firm
+                            </h2>
+                            <p class="sub-heading center">
+                                Our Law Office provides a professional
+                                experience for all <br />
+                                our clients, helping them navigate their legal
+                                rights.
+                            </p>
+                        </div>
+                        <div class="about__feature--content">
+                            <img
+                                class="about__feature-2-img"
+                                src="./assets/images/about-feature-2-img.png"
+                                alt=""
+                            />
+                            <img
+                                class="about__feature-2-img-xl"
+                                src="./assets/images/about-feature-2-img-xl.png"
+                                alt=""
+                            />
+                            <img
+                                class="about__feature-2-img-lg"
+                                src="./assets/images/about-feature-2-img-lg.png"
+                                alt=""
+                            />
+                            <img
+                                class="about__feature-2-img-md"
+                                src="./assets/images/about-feature-2-img-md.png"
+                                alt=""
+                            />
+                            <img
+                                class="about__feature-2-img-sm"
+                                src="./assets/images/about-feature-2-img-sm.png"
+                                alt=""
+                            />
+                            <img
+                                class="about__dot"
+                                src="./assets/images/dot.svg"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                </section>
+                <section class="countdown">
+                    <div class="container">
+                        <div class="countdown__content">
+                            <div class="countdown__item">
+                                <p class="heading--main">1782</p>
+                                <p>Law Cases</p>
+                            </div>
+                            <div class="countdown__item">
+                                <p class="heading--main">10+</p>
+                                <p>Lawyer</p>
+                            </div>
+                            <div class="countdown__item">
+                                <p class="heading--main">98%</p>
+                                <p>Happy Clients</p>
+                            </div>
+                            <div class="countdown__item">
+                                <p class="heading--main">90%</p>
+                                <p>Winning case</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="video">
+                    <div class="container">
+                        <div class="video__top">
+                            <p class="sub-heading">#Video</p>
+                            <h2 class="heading">Our History & Mission</h2>
+                            <p class="sub-heading">
+                                Our Law Office provides a professional
+                                experience for all <br />
+                                our clients, helping them navigate their legal
+                                rights.
+                            </p>
+                        </div>
+
+                        <div class="video__content">
+                            <img
+                                class="video__img"
+                                src="./assets/images/video-img.png"
+                                alt=""
+                            />
+                            <img
+                                class="video__img--xl"
+                                src="./assets/images/video-img-xl.png"
+                                alt=""
+                            />
+                            <img
+                                class="video__img--lg"
+                                src="./assets/images/video-img-lg.png"
+                                alt=""
+                            />
+                            <img
+                                class="video__img--md"
+                                src="./assets/images/video-img-md.png"
+                                alt=""
+                            />
+                            <img
+                                class="video__img--sm"
+                                src="./assets/images/video-img-sm.png"
+                                alt=""
+                            />
+                            <img
+                                class="video__btn--play"
+                                src="./assets/images/video-btn-play.svg"
+                                alt=""
+                            />
+                            <img
+                                class="video__btn--play-md"
+                                src="./assets/images/video-btn-play-md.svg"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                </section>
+                <%- include("./partials/team.ejs") %> <%-
+                include("./partials/award.ejs") %> <%-
+                include("./partials/cta.ejs") %>
+            </main>
+            <%- include("./partials/footer.ejs") %>
+        </div>
+        <script type="module" src="./main.js"></script>
     </body>
 </html>

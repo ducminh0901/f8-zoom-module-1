@@ -1,0 +1,15 @@
+@use "/scss/mixins";
+@use "../variables" as *;
+.award {
+    background-color: $yellow-light-color;
+    padding: 60px 0;
+    .award__sub-heading {
+        color: $primary-color;
+    }
+    .award__img {
+        margin-top: $top-gap;
+        .award__img-wrapper {
+            display: inline-block;
+        }
+    }
+}

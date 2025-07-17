@@ -1,0 +1,38 @@
+$grid-breakpoints: (
+    xxl: 1400px,
+    xl: 1200px,
+    lg: 992px,
+    md: 768px,
+    sm: 576px,
+);
+//Fonts
+$sub-heading: 400 18px/30px "Roboto Slab", serif;
+$h1-font: 800 60px/70px "Roboto Slab", serif;
+$h2-font: 700 42px/52px "Roboto Slab", serif;
+$h3-font: 700 24px/34px "Roboto Slab", serif;
+$h4-font: 700 22px/32px "Manrope", sans-serif;
+$h5-font: 700 20px/30px "Manrope", sans-serif;
+$btn-1: 600 18px/30px "Manrope", sans-serif;
+$btn-2: 600 16px/28px "Manrope", sans-serif;
+$p-1: 400 18px/30px "Manrope", sans-serif;
+$p-1m: 600 18px/30px "Manrope", sans-serif;
+$p-2: 400 16px/28px "Manrope", sans-serif;
+$p-3: 400 14px/24px "Manrope", sans-serif;
+
+//Colors
+$primary-color: #0e1412;
+$secondary-color: #fff;
+$color-button: #fd6038;
+$yellow-color: #fed464;
+$green-color: #017848;
+$gray-color: #586863;
+$yellow-light-color: #f8ebc9;
+
+//Section gap
+$section-gap: 125px;
+//Text gap
+$text-gap: 20px;
+//Button gap
+$button-gap: 38px;
+// Up and down gap
+$top-gap: 70px;

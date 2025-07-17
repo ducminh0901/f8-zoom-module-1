@@ -1,0 +1,43 @@
+@use "/scss/mixins";
+@use "../variables" as *;
+.team {
+    background-color: $primary-color;
+    color: #fff;
+    padding: 60px 0;
+    .team__description {
+        text-align: center;
+        .team__sub-heading {
+            color: $color-button;
+        }
+        .team__paragraph {
+            margin-top: $text-gap;
+            margin-bottom: $top-gap;
+        }
+    }
+    .team__item {
+        position: relative;
+        text-align: center;
+        display: inline-block;
+        .team__item--sm {
+            display: none;
+        }
+        @include mixins.screen(sm) {
+            .team__item--xxl {
+                display: none;
+            }
+            .team__item--sm {
+                display: block;
+            }
+        }
+        .show-profile {
+            position: absolute;
+            bottom: 20%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    .team__btn {
+        margin-top: $button-gap;
+        text-align: center;
+    }
+}

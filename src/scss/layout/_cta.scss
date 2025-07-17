@@ -1,0 +1,13 @@
+@use "../variables" as *;
+.cta {
+    background-color: $green-color;
+}
+.cta__inner {
+    padding: $section-gap 0;
+    text-align: center;
+    color: $secondary-color;
+    .cta__paragraph {
+        max-width: 500px;
+        margin: 20px auto;
+    }
+}

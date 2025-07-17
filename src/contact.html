@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contact</title>
+        <%- include("./partials/head") %>
+    </head>
+    <body>
+        <header class="contact">
+            <div class="container"><%- include("./partials/header") %></div>
+        </header>
+        <main>
+            <section class="contact__inner">
+                <div class="container">
+                    <div class="contact__top">
+                        <p class="sub-heading contact__gray">Contact us</p>
+                        <h2 class="heading">
+                            We Are Always Ready To Hear <br />
+                            For You.
+                        </h2>
+                        <p class="contact__gray">
+                            The right move at the right time saves your
+                            investment. live the dream of <br />expanding your
+                            business.
+                        </p>
+                    </div>
+                    <div class="contact__content">
+                        <div class="row row-cols-2 g-3 row-cols-lg-1">
+                            <div class="col">
+                                <div class="contact__input">
+                                    <input
+                                        type="text"
+                                        placeholder="Enter your name"
+                                    />
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="contact__input">
+                                    <input
+                                        type="text"
+                                        placeholder="Comapy (optioanl)"
+                                    />
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="contact__input">
+                                    <input
+                                        type="email"
+                                        placeholder="Your email"
+                                    />
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="contact__input">
+                                    <input
+                                        type="text"
+                                        placeholder="Phone number"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="content__text-area">
+                                    <textarea
+                                        name="message"
+                                        id=""
+                                        placeholder="Tell us about yourself"
+                                    ></textarea>
+                                    <button class="btn contact__btn">
+                                        Contact us
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <%- include("./partials/footer") %>
+        <script type="module" src="./main.js"></script>
+    </body>
+</html>

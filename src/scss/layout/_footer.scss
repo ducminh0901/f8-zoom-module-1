@@ -1,0 +1,93 @@
+@use "/scss/mixins";
+@use "../variables" as *;
+
+h5 {
+    font: $h5-font;
+}
+.footer {
+    background: $primary-color;
+}
+.footer__inner {
+    .footer__content {
+        margin-bottom: 50px;
+    }
+    color: $secondary-color;
+    padding-top: $section-gap;
+    padding-bottom: 30px;
+    .footer__item {
+        position: relative;
+        .footer__btn {
+            font: $btn-1;
+            background: #fff;
+            padding: 15px 35px;
+            position: absolute;
+            top: 7%;
+            left: 5%;
+            &:hover {
+                background: $primary-color;
+                color: $secondary-color;
+            }
+            @include mixins.screen(sm) {
+                font-family: Manrope;
+                font-size: 11.404px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 19.957px;
+                padding: 5px 15px;
+            }
+        }
+        & p {
+            margin: 20px 0;
+        }
+        .footer__map--sm {
+            display: none;
+        }
+        @include mixins.screen(sm) {
+            .footer__map--xxl {
+                display: none;
+            }
+            .footer__map--sm {
+                display: inline-block;
+            }
+        }
+    }
+
+    .footer__bottom {
+        border-top: 1px solid $gray-color;
+        display: flex;
+        flex-direction: column;
+        .footer__logo {
+            padding-top: 50px;
+            width: 7%;
+            text-align: center;
+            @include mixins.screen(sm) {
+                width: 20%;
+            }
+            .justice {
+                font-family: "Roboto Slab", serif;
+                font-size: 24px;
+                font-weight: 700;
+            }
+            .law-firm {
+                font-family: "Roboto Slab", serif;
+                font-size: 14px;
+            }
+        }
+        .footer__social {
+            display: flex;
+            justify-content: space-between;
+            & p {
+                margin-top: 20px;
+            }
+            @include mixins.screen(md) {
+                flex-direction: column;
+                gap: 20px;
+                align-items: start;
+                img {
+                    max-height: 48px;
+                    width: auto;
+                }
+            }
+        }
+    }
+}

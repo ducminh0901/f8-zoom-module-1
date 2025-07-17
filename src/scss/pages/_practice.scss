@@ -1,0 +1,9 @@
+@use "../variables" as *;
+.practice__header {
+    background: $yellow-light-color;
+    .practice__content {
+        text-align: center;
+        margin-top: $section-gap;
+        padding-bottom: $section-gap;
+    }
+}
